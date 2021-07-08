@@ -1,9 +1,9 @@
 .container {
     display: grid;
     width: 100%;
-    height: 600px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 1fr 1fr 100px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% 1fr 1fr 20%;
     grid-template-areas: "header header header"
         "content-2 content-3 sidebar"
         "content-1 content-1 sidebar"
@@ -30,6 +30,7 @@
 .content-2 {
     grid-area: content-2;
     background-color: rgb(52, 83, 175);
+
 }
 
 .content-3 {
@@ -58,4 +59,19 @@
 
 .footer-section-4 {
     background-color: rgb(108, 68, 172);
+}
+
+.pict1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 5%;
+}
+
+.container_pict {
+    width: 90%;
+}
+
+.fly_nav {
+    padding: 20px;
+    font-size: 3vw;
 }
